@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RuGitHub</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <!— Левая часть: профиль —>
+    <aside class="profile">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png" alt="Profile Picture" class="profile-pic">
+      <h2>Михаил Кузьмичёв</h2>
+      <p>mixailkuzmichev · aggressive</p>
+      <button>Редактировать</button>
+      <p>Россия<span style="margin-left: 10px;">&#127479;&#127482;</span></p>
+    </aside>
+
+    <!— Правая часть: репозитории —>
+    <main class="repositories">
+      <header class="repo-header">
+        <input type="text" placeholder="Найти репозитории..." class="search-bar">
+        <button>Тип</button>
+        <button>Язык</button>
+        <button>Сортировать</button>
+        <button class="new-repo">Создать</button>
+      </header>
+      <ul class="repo-list">
+        <li class="repo-item">
+          <h3><span class="name-repo">Репозиторий - 1</span><span class="badge public">Публичный</span></h3>
+          <p>JavaScript · Изменен в Декабре 12</p>
+          <button class="star-btn">☆ Добавить</button>
+        </li>
+        <li class="repo-item">
+          <h3><span class="name-repo">Репозиторий - 2</span><span class="badge private">Частный</span></h3>
+          <p>HTML · Изменен в Июне 20, 2022</p>
+          <button class="starred-btn">★ Избранное</button>
+        </li>
+      </ul>
+    </main>
+  </div>
+</body>
+</html>

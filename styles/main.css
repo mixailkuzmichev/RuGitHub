@@ -1,0 +1,172 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Экран на 2 части (профиль и репы) */
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* Профиль (левая часть) */
+  .profile {
+    width: 25%;
+    background-color: #161b22;
+    padding: 20px;
+    text-align: center;
+    border-right: 1px solid #21262d;
+  }
+  
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .profile h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .profile p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  
+  .profile button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #238636;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+  .profile button:hover {
+    background-color: #2ea043;
+  }
+  
+  /* Репы(правая часть) */
+  .repositories {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .repo-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    color: #c9d1d9;
+  }
+  
+  .search-bar::placeholder {
+    color: #8b949e;
+  }
+  
+  .repo-header button {
+    padding: 10px 15px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    cursor: pointer;
+    transition: .2s;
+  }
+  
+   .repo-header .new-repo {
+    background-color: #238636;
+    color: white;
+  }
+  
+  .repo-header button:hover {
+    background-color: #30363d;
+  }
+  
+  /* Список реп */
+  .repo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .repo-item {
+    padding: 15px;
+    background-color: #161b22;
+    border: 1px solid #21262d;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .repo-item h3 .name-repo{
+    margin: 0;
+    font-size: 16px;
+    transition: .3s;
+  }
+
+  .repo-item h3 .name-repo:hover{
+    font-size: large;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #238636;
+    
+  }
+  
+  .repo-item p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #8b949e;
+  }
+  
+  .badge {
+    padding: 2px 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    margin-left: 10px;
+  }
+  
+  .public {
+    background-color: #238636;
+    color: white;
+  }
+  
+  .private {
+    background-color: #8b949e;
+    color: black;
+  }
+  
+  .star-btn,
+  .starred-btn {
+    background-color: #21262d;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    color: #c9d1d9;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .starred-btn {
+    background-color: #ffd33d;
+    color: black;
+  }
