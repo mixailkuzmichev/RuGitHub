@@ -164,9 +164,11 @@ body {
     color: #c9d1d9;
     padding: 5px 10px;
     cursor: pointer;
+    transition: .2s;
   }
   
   .starred-btn {
     background-color: #ffd33d;
     color: black;
   }
+
