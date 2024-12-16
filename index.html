@@ -6,10 +6,11 @@
   <title>RuGitHub</title>
   <link rel="shortcut icon" href="./src/img/social-engineering_3594494.ico" type="image/x-icon">
   <link rel="stylesheet" href="./styles/main.css">
+  
 </head>
 <body>
   <div class="container">
-    <!— Левая часть: профиль —>
+    
     <aside class="profile">
       <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/Flag_of_Russia.svg/1200px-Flag_of_Russia.svg.png" alt="Profile Picture" class="profile-pic">
       <h2>Михаил Кузьмичёв</h2>
@@ -18,29 +19,18 @@
       <p>Россия<span style="margin-left: 10px;">&#127479;&#127482;</span></p>
     </aside>
 
-    <!— Правая часть: репозитории —>
+    
     <main class="repositories">
       <header class="repo-header">
         <input type="text" placeholder="Найти репозитории..." class="search-bar">
-        <button>Тип</button>
-        <button>Язык</button>
-        <button>Сортировать</button>
-        <button class="new-repo">Создать</button>
+        <button id="type">Тип</button>
+        <button id="lang">Язык</button>
+        <button id="sort">Сортировать</button>
+        <button class="new-repo" id="create">Создать</button>
       </header>
-      <ul class="repo-list">
-        <li class="repo-item">
-          <h3><span class="name-repo">Репозиторий - 1</span><span class="badge public">Публичный</span></h3>
-          <p>JavaScript · Изменен в Декабре 12</p>
-          <button class="star-btn" id="btn-1">☆ Добавить</button>
-        </li>
-        <li class="repo-item">
-          <h3><span class="name-repo">Репозиторий - 2</span><span class="badge private">Частный</span></h3>
-          <p>HTML · Изменен в Июне 20, 2022</p>
-          <button class="starred-btn" id="btn-2">★ Избранное</button>
-        </li>
-      </ul>
+      <ul class="repo-list"></ul>
     </main>
   </div>
-  <script src="./scripts/main.js"></script>
+  <script src="./scripts/clickHeaderButton.js"></script>
 </body>
 </html>
